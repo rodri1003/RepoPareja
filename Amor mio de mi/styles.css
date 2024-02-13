@@ -1,0 +1,73 @@
+body {
+    background-color: #ffd6d6; /* Fondo rosa */
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.detalle-contenido {
+    margin-top: 20px;
+}
+
+#detalle {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco */
+}
+
+.decoracion-corazones {
+    position: relative;
+}
+
+.corazon {
+    position: absolute;
+}
+
+.corazon4 {
+    top: -75px;
+    left: -70px;
+}
+.corazon1 {
+    top: -45px;
+    left: -40px;
+}
+.corazon3 {
+    top: -15px;
+    left: -10px;
+}
+
+
+
+.corazon5 {
+    top: -80px;
+    right: -70px;
+}
+.corazon2 {
+    top: -45px;
+    right: -40px;
+}
+
+.corazon6 {
+    top: -15px;
+    right: -10px;
+}
+
+/* Estilos de los corazones */
+.corazon {
+    width: 40px;
+    height: auto;
+}
+
+/* Añadir cualquier estilo que desees */
+
+.oculto {
+    display: none;
+}

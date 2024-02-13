@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE U</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Mi reina hermosa</h1>
+        <div class="decoracion-corazones">
+            <img src="corazon.jpg" class="corazon corazon1">
+            <img src="corazon.jpg" class="corazon corazon2">
+            <img src="corazon.jpg" class="corazon corazon3">
+            <img src="corazon.jpg" class="corazon corazon4">
+            <img src="corazon.jpg" class="corazon corazon5">
+            <img src="corazon.jpg" class="corazon corazon6">
+            <!-- Añade más corazones si lo deseas -->
+        </div>
+        <div class="detalle-contenido">
+        <img src="Ella.jpeg" alt="Pareja" width="300">
+        <p>Gracias por estos hermosos 47 meses, me siento muy feliz estando a tu lado, espero poder llegar a muchisimos años mas juntos. Te amooo</p>
+       
+        
+    </div>
+    <button id="mostrarMensaje">Clic aquí amor</button>
+    <div id="mensajeRomantico" class="oculto"></div>
+</div>
+
+<script>document.addEventListener("DOMContentLoaded", function() {
+    var mensajes = [
+        "Eres la luz de mi vida.",
+        "Cada día a tu lado es un regalo.",
+        "No hay nada que me haga más feliz que estar contigo.",
+        "Tu amor es mi inspiración.",
+        "Eres mi todo.",
+        "Eres el amor de mi vida",
+        "Te amo mely bebe"
+    ];
+
+    var mensajeIndex = 0;
+    var mensajeRomantico = document.getElementById("mensajeRomantico");
+    var mostrarMensajeBtn = document.getElementById("mostrarMensaje");
+
+    mostrarMensajeBtn.addEventListener("click", function() {
+        mensajeRomantico.textContent = mensajes[mensajeIndex];
+        mensajeIndex = (mensajeIndex + 1) % mensajes.length;
+        mensajeRomantico.classList.remove("oculto");
+        setTimeout(function() {
+            mensajeRomantico.classList.add("oculto");
+        }, 3000); // Ocultar el mensaje después de 3 segundos
+    });
+});</script>
+
+
+</body>
+</html>
